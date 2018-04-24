@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xbL-Va-VJh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fis-4B-tJO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -53,6 +53,58 @@
             </objects>
             <point key="canvasLocation" x="964" y="31.934032983508249"/>
         </scene>
+        <!--My Category-->
+        <scene sceneID="NHL-8P-8OS">
+            <objects>
+                <viewController id="tLi-BD-TVK" customClass="CategoryViewController" customModule="MyYoutube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyK-S0-50a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search videos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beQ-oo-eyJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="auH-yE-09g">
+                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8oo-rY-RGv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tLi-BD-TVK" id="we2-Sh-Y7s"/>
+                                    <outlet property="delegate" destination="tLi-BD-TVK" id="AV5-9K-89p"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B6u-66-QlQ" firstAttribute="trailing" secondItem="auH-yE-09g" secondAttribute="trailing" id="19F-tu-tha"/>
+                            <constraint firstItem="beQ-oo-eyJ" firstAttribute="top" secondItem="B6u-66-QlQ" secondAttribute="top" id="Iwc-Wp-tTA"/>
+                            <constraint firstItem="B6u-66-QlQ" firstAttribute="trailing" secondItem="beQ-oo-eyJ" secondAttribute="trailing" id="Xva-PY-wbM"/>
+                            <constraint firstItem="auH-yE-09g" firstAttribute="leading" secondItem="B6u-66-QlQ" secondAttribute="leading" id="cet-Oa-Wop"/>
+                            <constraint firstItem="B6u-66-QlQ" firstAttribute="bottom" secondItem="auH-yE-09g" secondAttribute="bottom" id="fyT-9q-mDR"/>
+                            <constraint firstItem="auH-yE-09g" firstAttribute="top" secondItem="beQ-oo-eyJ" secondAttribute="bottom" id="kLK-zX-1Eb"/>
+                            <constraint firstItem="beQ-oo-eyJ" firstAttribute="leading" secondItem="B6u-66-QlQ" secondAttribute="leading" id="mwD-tk-2Uq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B6u-66-QlQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Category" id="STP-qA-K09"/>
+                    <connections>
+                        <outlet property="collectionView" destination="auH-yE-09g" id="Xdv-ki-hPP"/>
+                        <outlet property="searchTextField" destination="beQ-oo-eyJ" id="Acf-x1-EFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBC-ga-uBJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="913"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="c9e-1X-B36">
             <objects>
@@ -70,6 +122,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Pa-iL-t0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-7" y="32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wdq-xA-hKa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4R-yD-DhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fis-4B-tJO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7pk-ek-2yP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tLi-BD-TVK" kind="relationship" relationship="rootViewController" id="LLD-Gu-Bzm"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-7" y="913"/>
         </scene>
     </scenes>
 </document>

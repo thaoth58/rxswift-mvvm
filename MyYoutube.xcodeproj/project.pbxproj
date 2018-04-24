@@ -17,6 +17,9 @@
 		5F2058A3208B3BCF0095AF70 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2058A1208B3BCF0095AF70 /* VideoCell.xib */; };
 		5F2058A7208B3E3E0095AF70 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2058A6208B3E3E0095AF70 /* ListViewModel.swift */; };
 		5F2058AA208B8D6B0095AF70 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2058A9208B8D6B0095AF70 /* ApiProvider.swift */; };
+		5FD756BB208ED444006B2746 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD756BA208ED444006B2746 /* CategoryViewController.swift */; };
+		5FD756BE208ED4AC006B2746 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD756BC208ED4AC006B2746 /* CategoryCell.swift */; };
+		5FD756BF208ED4AC006B2746 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FD756BD208ED4AC006B2746 /* CategoryCell.xib */; };
 		855B277849AF8D55A4403656 /* Pods_MyYoutube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E61AEE668D6F66C1AFBB859 /* Pods_MyYoutube.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		5F2058A1208B3BCF0095AF70 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		5F2058A6208B3E3E0095AF70 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		5F2058A9208B8D6B0095AF70 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		5FD756BA208ED444006B2746 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		5FD756BC208ED4AC006B2746 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		5FD756BD208ED4AC006B2746 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		7261B1F1D3F57E2657A8D23C /* Pods-MyYoutube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyYoutube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyYoutube/Pods-MyYoutube.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +120,7 @@
 			children = (
 				5F20589F208B3BB90095AF70 /* Cell */,
 				5F20589D208B3B9D0095AF70 /* ListViewController.swift */,
+				5FD756BA208ED444006B2746 /* CategoryViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +138,8 @@
 			children = (
 				5F2058A0208B3BCF0095AF70 /* VideoCell.swift */,
 				5F2058A1208B3BCF0095AF70 /* VideoCell.xib */,
+				5FD756BC208ED4AC006B2746 /* CategoryCell.swift */,
+				5FD756BD208ED4AC006B2746 /* CategoryCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -203,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD756BF208ED4AC006B2746 /* CategoryCell.xib in Resources */,
 				5F205869208B2F720095AF70 /* LaunchScreen.storyboard in Resources */,
 				5F2058A3208B3BCF0095AF70 /* VideoCell.xib in Resources */,
 				5F205866208B2F720095AF70 /* Assets.xcassets in Resources */,
@@ -268,6 +278,8 @@
 			files = (
 				5F20589A208B3A9D0095AF70 /* Video.swift in Sources */,
 				5F2058A2208B3BCF0095AF70 /* VideoCell.swift in Sources */,
+				5FD756BB208ED444006B2746 /* CategoryViewController.swift in Sources */,
+				5FD756BE208ED4AC006B2746 /* CategoryCell.swift in Sources */,
 				5F2058A7208B3E3E0095AF70 /* ListViewModel.swift in Sources */,
 				5F2058AA208B8D6B0095AF70 /* ApiProvider.swift in Sources */,
 				5F20585F208B2F710095AF70 /* AppDelegate.swift in Sources */,
@@ -419,7 +431,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65MUWGJ9FF;
 				INFOPLIST_FILE = MyYoutube/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.MyYoutube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -435,7 +450,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65MUWGJ9FF;
 				INFOPLIST_FILE = MyYoutube/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gem.MyYoutube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
